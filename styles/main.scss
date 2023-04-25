@@ -1,0 +1,972 @@
+@import url('https://fonts.googleapis.com/css?family=Mohave|Rationale|Open+Sans:300,400,600');
+
+//squada one
+//Odibee Sans
+//Nova Mono
+//Nova Square
+//Big Shoulders Text
+//Share Tech
+//Gemunu Libre
+
+
+$mobile-breakpoint: 580px;
+$tablet-breakpoint: 1080px;
+$desktop-breakpoint: 1440px;
+$fourk-breakpoint: 2160px;
+
+$title-font:"Rationale";
+$body-font:"Open Sans";
+$body-color:white;
+$element-background-color: rgba(0,0,0,0.3);
+$box-element-shadow: 10px 10px 0px rgba(black,0.1);
+// 0px 8px 12px previously
+$text-element-shadow: 4px 4px 0px rgba(black,0.5);
+// 0 6 6 previously
+
+$background-1-red:32;
+$background-1-green:20;
+$background-1-blue:65;
+$background-1:rgb($background-1-red,$background-1-green,$background-1-blue);
+$background-2-red:45;
+$background-2-green:8;
+$background-2-blue:30;
+$background-2:rgb($background-2-red,$background-2-green,$background-2-blue);
+$average-red:calc(($background-1-red + $background-2-red)/2);
+$average-green:calc(($background-1-green + $background-2-green)/2);
+$average-blue:calc(($background-1-blue + $background-2-blue)/2);
+$average-background:rgb($average-red, $average-green, $average-blue);
+
+$compressed-tile-height:260px;
+$expanded-tile-height:460px;
+
+$compressed-tile-filter:grayscale(0) opacity(0.3);
+$keytile-transition: all 0.3s;
+$button-hover-transition: all 0.2s;
+
+@mixin compressed-tile-aspect{
+    @media screen and (max-width:$mobile-breakpoint) {
+        aspect-ratio: 2;
+    }
+    @media screen and (min-width:$mobile-breakpoint) and (max-width: $desktop-breakpoint) {
+        aspect-ratio: 3;
+    }
+    @media screen and (min-width: $desktop-breakpoint) {
+        aspect-ratio:4;
+    }
+}
+@mixin expanded-tile-aspect{
+    @media screen and (max-width: $desktop-breakpoint) {
+        aspect-ratio: 2.25;
+    }
+    @media screen and (min-width: $desktop-breakpoint) {
+        height:$expanded-tile-height;
+    }
+}
+
+@mixin scale-transition($x) {
+    transform: none;
+    transition: all 0.2s;
+    &:hover {
+        transform: scale($x);
+        transition: all 0.2s;
+    }
+}
+
+.floatInDisabled {
+    transform: translateY(50px);
+    opacity:0;
+    transition: $keytile-transition;
+}
+
+.floatInEnabled {
+    transform: translateY(0);
+    opacity: 1;
+    transition: $keytile-transition;
+}
+
+@keyframes basic-load {
+    0% {
+        transform: translateY(50px);
+        opacity:0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@mixin main-content-width {
+    @media screen and (min-width: $fourk-breakpoint) {
+        width:60%;
+    }
+    @media screen and (min-width: $tablet-breakpoint) and (max-width:$fourk-breakpoint) {
+        width:80%;
+    }
+    @media screen and (max-width: $tablet-breakpoint) {
+        width:100%;
+    }
+    margin: 0px auto 0px auto;
+}
+
+@mixin main-content-panel {
+    @include main-content-width();
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:40px;
+    border-bottom:160px solid transparent;
+    @media screen and (min-width:$fourk-breakpoint) {
+        border-bottom: 200px solid transparent;
+    }
+}
+
+@mixin link-hover-underline {
+    border-bottom: 1px solid transparent;
+    transition: $button-hover-transition;
+    &:hover{
+        border-bottom: 1px solid $body-color;
+        transition: $button-hover-transition;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin:0;
+    min-height: calc(100vh - 40px);
+    position:relative;
+    top:0;
+    left:0;
+}
+
+title, h1, h2, h3 {
+    font-family: $title-font;
+    color: $body-color
+}
+
+h4, p, a, label, textarea, input {
+    font: {
+        family: $body-font;
+        weight: 300;
+    }
+    color: $body-color
+}
+
+p {
+    a {
+        text-decoration: underline;
+    }
+}
+
+main {
+    @include main-content-panel();
+}
+
+button {
+    background:none;
+    color: $body-color;
+    border:4px solid $body-color;
+    padding:15px 20px;
+    display:flex;
+    align-items: center;
+    font: {
+        family:$body-font;
+        weight:300;
+        size: 1.4rem;
+    }
+    &:hover {
+        border:4px solid $body-color;
+        background-color: $body-color;
+        color:$average-background;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .fa {
+        width:1rem;
+        margin:0px;
+        padding:0px;
+    }
+}
+
+input, textarea {
+    background-color: rgb(calc($average-red + 50), calc($average-green + 50), calc($average-blue + 50));
+    color:$body-color;
+    border:0px solid $body-color;
+    height:1.8rem;
+    font: {
+        size:1.4rem;
+        weight:300;
+    }
+    padding:5px 10px;
+}
+
+html {
+    margin:0;
+    padding:0;
+    background: linear-gradient($background-1,$background-2);
+}
+
+header {
+    margin:40px 0px;
+    display: flex;
+    justify-content: center;
+    .headWrapper {
+        display: inline-block;
+        h1 {
+            font: {
+                family: $title-font;
+                size: 6rem;
+            }
+            @media screen and (min-width:$fourk-breakpoint) {
+                font-size: 8rem;
+            }
+            @media screen and (max-width:$mobile-breakpoint) {
+                font-size: 3.6rem;
+                min-width: 260px;
+                margin:0px;
+            }
+            text-shadow: $text-element-shadow;
+            text-align: center;
+            letter-spacing: -0.2rem;
+            color:$body-color;
+            margin:0 auto 5px auto;
+        }
+        nav {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            @media screen and (max-width:$mobile-breakpoint) {
+                width:100%;
+                flex-direction: column;
+                text-align: center;
+                gap:5px;
+            }
+            justify-content: space-between;
+            margin:0px;
+            padding:0px;
+            color:$body-color;
+            font: {
+                family: $body-font;
+                weight: 300;
+                size:1.4rem;
+            };
+            @media screen and (min-width:$fourk-breakpoint) {
+                font-size:1.8rem;
+            }
+            @media screen and (max-width:$mobile-breakpoint) {
+                font-size: 1.2rem;
+            }
+            text-shadow: $text-element-shadow;
+
+            .faIcon {
+                width:18px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            p {
+                margin:0px;
+                padding:0px;
+            }
+
+            @media screen and (max-width:$mobile-breakpoint) {
+                .navExpand {
+                    display: block;
+                    margin-top: 16px;
+                }
+                .navLink.desktop {
+                    display: none;
+                }
+            }
+            @media screen and (min-width:$mobile-breakpoint) {
+                .navExpand {
+                    display: none;
+                }
+                .navLink.mobile {
+                    display: none;
+                }
+            }
+            
+
+            .navLink {
+                margin: 0px 5px;
+                @include link-hover-underline();
+            }
+            .active {
+                border-bottom: 1px solid $body-color;
+            }
+        }
+    }
+}
+
+.logoStyling {
+    // max-height:calc($compressed-tile-height - 60px);
+    max-height: 80%;
+    max-width:90%;
+    margin:auto;
+    position:absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+    top:50%;
+    background: radial-gradient(rgba(black,0.55) 0%,rgba(black,0.35) 20%,transparent 60%);
+    filter: drop-shadow(1px 2px rgba(black,0.4) );
+}
+
+.platformButton {
+    width:44px;
+    height:44px;
+    border:3px solid $body-color;
+    border-radius: 25px;
+    transition: all 0.2s;
+
+    .fa {
+        width: 30px;
+        height: 30px;
+        margin:7px;
+        transition: all 0.2s;
+        color:$body-color;
+    }
+    &:hover{
+        background-color: $body-color;
+        transition: all 0.2s;
+        .fa {
+            transition: all 0.2s;
+            color:$average-background;
+        }
+        cursor: pointer;
+    }
+}
+
+.platformButtons {
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+
+.keyGameInfo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1, h2 {
+        margin:0;
+        padding:0px 20px;
+        text-shadow: $text-element-shadow;
+    }
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.4rem;
+    }
+    @media screen and (min-width:$fourk-breakpoint) {
+        h1 {
+            font-size: 6.6rem;
+        }
+        h2 {
+            font-size: 3.2rem;
+        }
+    }
+
+    @media screen and (max-width:$mobile-breakpoint) {
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.logoHeader {
+    width:100%;
+    aspect-ratio: 1.5;
+    max-height:$compressed-tile-height;
+    background-size:cover;
+    background-position: 30%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logoHeaderLogo {
+        position: relative;
+        transform: none;
+        top:0;
+        left:0;
+    }
+}
+
+.reelFrame {
+    aspect-ratio: 16/9;
+    iframe {
+        aspect-ratio: 16/9;
+    }
+}
+
+.awardsContainter {
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+    .awardTile {
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+        align-items: center;
+        background-color: $element-background-color;
+        overflow: hidden;
+        box-shadow: $box-element-shadow;
+        padding:20px;
+        border:8px solid rgb(142, 109, 48);
+        .logoContainer {
+            max-width: 200px;
+            width:auto;
+            height:auto;
+            img {
+                width:100%;
+                height: auto;
+            }
+        }
+
+        h4 {
+            margin:0;
+            text-align: center;
+        }
+        @include scale-transition(1.05);
+    }
+}
+
+.reviewSection {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding:0px 100px;
+
+    @media screen and (max-width:$mobile-breakpoint) {
+        padding: 0px 50px;
+    }
+    .pressQuoteDiv {
+        position: relative;
+        margin:10px 0px;
+
+        .quoteMark {
+            opacity:0.25;
+            display:block;
+            position:absolute;
+            font: {
+                family: Times New Roman;
+                size:8rem;
+            }
+        }
+        .front {
+            top:-135px;
+            left:-25px;
+        }
+        .back {
+            top:-135px;
+            right:-25px;
+        }
+
+        .pressQuote {
+            margin:5px 0px;
+            text-align: justify;
+            font: {
+                size:1.4rem;
+            }
+        }
+
+        .pressCrediting {
+            margin: 5px 0px;
+            text-align: right;
+            float:right;
+            width:100%;
+        }
+
+    }
+}
+
+.keyTile.small {
+    // height:$compressed-tile-height;
+    @include compressed-tile-aspect();
+    #gothamKnightsParallax div {
+        background-position-y: 25% !important;
+    }
+}
+.keyTile.large {
+    // height:$expanded-tile-height;
+    @include expanded-tile-aspect();
+    #gothamKnightsParallax div {
+        background-position-y: 33% !important;
+    }
+}
+
+.keyTile {
+    width:100%;
+    position:relative;
+    transition:$keytile-transition;
+
+    .keyGameInfo {
+        background: radial-gradient(rgba(0,0,0,0.45) 0%,transparent 40%);
+        h1, h2 {
+            background: radial-gradient(rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.15) 30%,transparent 40%);
+        }
+    }
+    
+    .outerGameLogo {
+        opacity:1;
+        transition: $keytile-transition;
+    }
+    &:hover {
+        cursor:pointer;
+        .outerGameLogo{
+            opacity:0;
+            transition: $keytile-transition;
+        }
+        .compressedTile {
+            filter: grayscale(0) opacity(1);
+            transition: $keytile-transition;
+        }
+    }
+    .compressedTile {
+        // height:$compressed-tile-height;
+        @include compressed-tile-aspect();
+        filter: $compressed-tile-filter;
+        transition: $keytile-transition;
+        div{
+            img{
+                width:100%
+            }
+        }
+        
+    }
+    .keyGameInfo{
+        position:absolute;
+        height:100%;
+        width:100%;
+        top:0px;
+        z-index: 2;
+    }
+    .fullTile {
+        // height:$expanded-tile-height;
+        @include expanded-tile-aspect();
+        transition: $keytile-transition;
+        div{
+            img{
+                width:100%
+            }
+        }
+    }
+
+    #laterDatersParallax div {
+        background-position-y: top !important;
+    }
+    #dragRaceSuperstarParallax div {
+        background-position-y: 35% !important;
+    }
+}
+
+.gameSection {
+    background-color: rgba(0,0,0,0.2);
+    @include main-content-panel();
+    box-shadow: $box-element-shadow;
+
+    .fullPageGameInfo {
+        display:flex;
+        flex-direction: column;
+        gap:30px;
+        padding:0px 7%;
+        font: {
+            weight:300 !important;
+        }
+        .gameSummary {
+            font-size:1.4rem;
+            line-height: 1.8rem;
+            margin:0px 0px;
+        }
+    }
+}
+
+.gamesSection {
+    @include main-content-panel();
+
+    .workTile{
+        // animation-name: basic-load;
+        // animation-duration: 1s;
+        // animation-timing-function: ease-in-out;
+        position:relative;
+        width:100%;
+        box-shadow: $box-element-shadow;
+        background-color: $element-background-color;
+        transition:$keytile-transition;
+
+        .infoSection {
+            padding:50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap:40px;
+
+            .topInfoSection {
+                width:100%;
+                display: flex;
+                gap:40px;
+                @media screen and (max-width:$tablet-breakpoint) {
+                    flex-direction:column;
+                }
+                .reelFrame {
+                    position:relative;
+                    float:left;
+                    @media screen and (max-width:$tablet-breakpoint) {
+                        width:100%;
+                    }
+                    @media screen and (min-width:$tablet-breakpoint) {
+                        min-width:45%;
+                        flex:1
+                    }
+                }
+                .descriptionFrame {
+                    color:$body-color;
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    gap:5px;
+                    font: {
+                        weight:300 !important;
+                    }
+                    .gameSummary {
+                        font-size:1.2rem;
+                        line-height: 1.6rem;
+                        margin:0px 0px 10px 0px;
+                    }
+                    @media screen and (min-width:$fourk-breakpoint) {
+                        .roleDescription {
+                            font-size: 2rem;
+                        }
+                        .gameSummary {
+                            font-size: 1.6rem;
+                            line-height: 2rem;
+                        }
+                    }
+                }
+                .platformButtons{
+                    margin:0px;
+                }
+            }   
+        }
+        
+        .platformButtons {
+            margin-bottom:40px;
+        }
+    }
+    
+}
+
+.bioSection {
+    animation: 1s ease-out 0s 1 basic-load;
+    width:calc(100% - 60px);
+    margin: 0px 30px;
+    display: flex;
+    gap:40px;
+    padding:40px;
+    background-color: $element-background-color;
+    @media screen and (max-width:$mobile-breakpoint) {
+        flex-direction: column;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        @media screen and (max-width:$mobile-breakpoint) {
+            width: 100%;
+        }
+        p {
+            font-size: 1rem;
+            line-height: 1.4rem;
+            margin:0;
+            padding:0;
+            float:left;
+            @media screen and (min-width:$fourk-breakpoint) {
+                font-size:1.6rem;
+                line-height:2rem;
+            }
+        }
+    }
+    
+    .bioHeroImage {
+        max-width: 100%;
+        width:400px;
+        // height:auto;
+        aspect-ratio: 1.77 !important;
+        float:right;
+        display: inline;
+        box-shadow: $box-element-shadow;
+        // margin: 10px;
+    }
+
+    .industryCardContainer {
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .industryCard {
+            flex-direction: column;
+            width:45%;
+            background-color: $element-background-color;
+            overflow: hidden;
+            box-shadow: $box-element-shadow;
+            .industryLogo {
+                img {
+                    width: 100%;
+                    aspect-ratio: 3;
+                    object-fit: cover;
+                }
+                overflow:hidden;
+                width:100%;
+            }
+            h4 {
+                margin: 10px 20px 20px 20px;
+            }
+            @include scale-transition(1.08)
+        }
+    }
+}
+
+.pressMain {
+    max-width: 800px;
+
+    .multipodContainer {
+        animation: 1s ease-out 0s 1 basic-load;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+    .multipodContainer.disabled {
+        gap:0px;
+    }
+
+    .podHeader {
+        display: flex;
+        flex-direction: row;
+        // gap:30px;
+        background-color: $element-background-color;
+        box-shadow: $box-element-shadow;
+        overflow: hidden;
+        .podArt{
+            width:250px;
+        }
+        .podText {
+            margin: 20px 30px;
+            display: flex;
+            flex-direction: column;
+
+            .podTitle {
+                font-size: 1.4rem;
+                @media screen and (max-width:800px) {
+                    font-size: 1.2rem;
+                }
+                text-decoration: underline;
+                margin: 0;
+            }
+            .epTitle {
+                font: {
+                    family: $body-font;
+                    size: 1.2rem;
+                    style: italic;
+                }
+                margin:0;
+            }
+            .epDescription, .podDescription {
+                font: {
+                    size:1rem;
+                }
+                margin:10px 0 0 0;
+            }
+
+            .buttonContainer {
+                display: flex;
+                justify-content: center;
+                button {
+                    text-align: center;
+                    font-size: 1.2rem;
+                    padding:10px 15px;
+                    // font-weight: 500;
+                    .multipodDropdown {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            
+        }
+        .podButtons {
+            margin: 20px 20px 20px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:10px;
+        }
+        @media screen and (max-width:$mobile-breakpoint) {
+            .podArt {
+                width:calc(100% - 30px);
+                margin:15px 15px 0 15px;
+            }
+            flex-direction: column;
+
+            .podText {
+                .buttonContainer {
+                    margin-top: 20px;
+                }
+            }
+            .podButtons {
+                flex-direction: row;
+                margin-top: 0px;
+            }
+        }
+
+        // @include scale-transition(1.05)
+    }
+
+    .podHeader.single {
+        @media screen and (min-width:$mobile-breakpoint) {
+            height:250px;
+        }
+        
+        .epDescription {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .podHeader.multi {
+        .podArt {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .podText {
+            justify-content: space-between;
+            .podTitle {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .podHeader.drop {
+        margin: 0px 75px;
+        opacity:1;
+        @media screen and (max-width:$mobile-breakpoint) {
+            margin: 0px 40px;
+        }
+        transform: none;
+        transition: all 0.4s;
+    }
+    .podHeader.drop.disabled {
+        visibility:hidden;
+        opacity: 0;
+        height:0px;
+        transform: translateY(-50%) scaleY(0%) ;
+        transition: all 0.4s;
+    }
+}
+
+.contactForm {
+    animation: 1s ease-out 0s 1 basic-load;
+    @include main-content-panel();
+    box-shadow: $box-element-shadow;
+    background-color: rgba(0,0,0,0.2);
+    padding:50px 0px;
+    h2 {
+        font-size:3rem;
+        margin:0px;
+    }
+    .formDiv {
+        width:80%;
+        display:inline-grid;
+        gap:20px 20px;
+        font-size: 1.4rem;
+
+        @media screen and (min-width:$mobile-breakpoint) {
+            grid: 45px 45px 180px/150px;
+        }
+
+        @media screen and (min-width:$mobile-breakpoint) and (max-width:$tablet-breakpoint) {
+            width:calc(100% - 100px);
+            margin:0 50px;
+            label {
+                font-size: 1.2rem;
+            }
+        }
+        @media screen and (max-width:$mobile-breakpoint) {
+            width:calc(100% - 40px);
+            margin:0 20px;
+            label {
+                font-size: 1.2rem;
+            }
+        }
+
+        label {
+            grid-column: 1 2;
+            margin:auto 0;
+            text-align: right;
+            @media screen and (max-width:$mobile-breakpoint) {
+                display: none;
+            }
+        }
+        input, textarea {
+            grid-column: 2 3;
+            resize:none;
+            border-bottom: 2px solid $body-color;
+            background-color: rgba(white, 0.1);
+        }
+    }
+}
+
+footer {
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+    margin-top:20px;
+    margin-bottom:0;
+    padding:20px 20px 40px 20px;
+    box-sizing: border-box;
+    background-color: mix(black, $background-2, 40%);
+
+    .footerContainer {
+        @include main-content-width();
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        .websiteBy, .footerContactContainer {
+            width:200px;
+            @media screen and (min-width:$fourk-breakpoint) {
+                width:300px;
+                font-size:1.4rem;
+            }
+        }
+
+        .footerSocialIcon {
+            width:30px;
+            height:30px;
+
+            @media screen and (min-width:$fourk-breakpoint) {
+                width:50px;
+                height:50px;
+            }
+
+            margin:5px;
+            @include link-hover-underline()
+        }
+
+        .footerContactLink {
+            float: right;
+            @include link-hover-underline()
+        }
+    }
+}

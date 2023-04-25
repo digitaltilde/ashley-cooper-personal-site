@@ -1,0 +1,116 @@
+[
+    {
+        "type":"podcast",
+        "podtitle":"Rainbow Road: A Gay Gaming Podcast",
+        "image":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1680827646/AshleyCooper/Other/Podcasts/NewRainbowRoadMike_exp1_pgvsjt.png",
+        "podDescription":"A pair of gaymers, Travis and Mike, discuss the world of gaming through a queer lens.",
+        "web":"https://open.spotify.com/show/6PBVIUiIOqswlTXqYdNjhJ",
+        "episodes":[
+            {
+                "eptitle":"The Last of Us: The Daddyfication of Gayming",
+                "applepod":"https://podcasts.apple.com/ca/podcast/the-last-of-us-the-daddyfication-of-gayming/id1508016763?i=1000479653370",
+                "spotify":"https://open.spotify.com/episode/2LZWEyTGNmC3Y6oDyAP25v?si=IvVPIIr1RH6_tHXSg0yr8A",
+                "google":"https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLnBvZGJlYW4uY29tL3JhaW5ib3dyb2FkL2ZlZWQueG1s/episode/cmFpbmJvd3JvYWQucG9kYmVhbi5jb20vYmU0ZjAzNjYtNDFlMy01ZjE4LThlZmItMTQ4Y2QzOTgwMmQy?sa=X&ved=0CAUQkfYCahcKEwjg9vSc_JX-AhUAAAAAHQAAAAAQPA",
+                "date":"2020-06-25",
+                "description":"Travis and Mike bring on Kyah (they/them), and Ashley Cooper (she/her) to recount memories of their first terrifying play-throughs of the Citizen Kane of gaming, and remind themselves, before getting their hands on the sequel, that the series has always been queer."
+            }, 
+            {
+                "eptitle":"The Last of Us 2: Bury Your Straights",
+                "applepod":"https://podcasts.apple.com/ca/podcast/the-last-of-us-2-bury-your-straights/id1508016763?i=1000509585984",
+                "spotify":"https://open.spotify.com/episode/18VlqN1Enxq8HZm8kJsmgp?si=dmupaLkrQXyz2pK1ZRjU8Q",
+                "google":"https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLnBvZGJlYW4uY29tL3JhaW5ib3dyb2FkL2ZlZWQueG1s/episode/cmFpbmJvd3JvYWQucG9kYmVhbi5jb20vMTVlYmE0ODAtN2UzMC0zNjE2LWFlNTktMzg5OTdhNTBiNGMy?sa=X&ved=0CAUQkfYCahcKEwjg9vSc_JX-AhUAAAAAHQAAAAAQPA",
+                "date":"2021-02-16",
+                "description":"Travis brings on Matt (any pronouns), Ashley (she/her), and Kyah (they/them) to revel in the beauty and horror of Naughty Dog's most ambitious game yet, and all the controversy that came with it."
+            },
+            {
+                "eptitle":"Life Is Strange: Be Gay, Bend Times",
+                "description":"Travis and Mike, as well as guests Ashley Park (she/her) and Ashley Cooper (she/her), rewind time to 2015 to discuss Life Is Strange. Spoilers for all episodes of season 1, warn your earholes.",
+                "date":"2020-06-09",
+                "applepod":"https://podcasts.apple.com/ca/podcast/life-is-strange-be-gay-bend-times/id1508016763?i=1000477510789",
+                "spotify":"https://open.spotify.com/episode/4itSZQLKTbAnytpBv0YQai?si=zSeLQHJ4QDu_tEZzK2qxNQ",
+                "google":"https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLnBvZGJlYW4uY29tL3JhaW5ib3dyb2FkL2ZlZWQueG1s/episode/cmFpbmJvd3JvYWQucG9kYmVhbi5jb20vODZiZDJmMDgtOTViOS01ZTc2LThlMWEtODNlNGE0NmEzZjgy?sa=X&ved=0CAUQkfYCahcKEwjg9vSc_JX-AhUAAAAAHQAAAAAQPA"
+            },
+            {
+                "eptitle":"Davey Double: Stanley Parable & The Beginner's Guide",
+                "description":"Ashley Cooper (she/her) returns, joining Matilda (she/her), Travis, and Mike as they peel back the many layers of Davey Wreden’s two most well known games. Find out whether Coda is real, how the Stanley Parable REALLY ends, and which character we somehow manage to make queer so this still fits under our umbrella.",
+                "date":"2022-02-23",
+                "applepod":"https://podcasts.apple.com/ca/podcast/davey-double-stanley-parable-the-beginners-guide/id1508016763?i=1000551977552",
+                "spotify":"https://open.spotify.com/episode/6f8AsSk26gjJFFpnQZq109?si=Uwj8NSdtTpmWSR3QeZtt2Q",
+                "google":"https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkLnBvZGJlYW4uY29tL3JhaW5ib3dyb2FkL2ZlZWQueG1s/episode/cmFpbmJvd3JvYWQucG9kYmVhbi5jb20vMmE5OTI3MWUtNjg3MC0zYzU4LTlhNTgtYTk2Y2IzYWViOTk2?sa=X&ved=0CAUQkfYCahcKEwjg9vSc_JX-AhUAAAAAHQAAAAAQPA"
+            }
+        ]
+    },
+    {
+        "type":"podcast",
+        "podtitle":"The Villain Was Right",
+        "image":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1680739626/AshleyCooper/Other/Podcasts/626x0w_vgidde.webp",
+        "podDescription":"Comedians Craig Fay and Rebecca Reeds view Movies and TV from the villain's perspective and dare to ask if they were really all that bad.",
+        "web":"https://www.fromsuperheroes.com/the-villain-was-right",
+        "episodes":[
+            {
+                "eptitle":"Watchmen",
+                "date":"2019-10-17",
+                "description":"The world’s smartest man, Ozzy Osmosis Jones, is the only one with a plan to save Earth from nuclear war. But when a murderous war criminal threatens to ruin his plans Ozzy is forced to confront a violent and psychopathic street tough and a couple who need to dress up in tights to feel good about themselves.",
+                "applepod":"https://podcasts.apple.com/us/podcast/watchmen-with-ashley-cooper/id1438524435?i=1000453858962",
+                "spotify":"https://open.spotify.com/episode/4gRwRlNSRhrqHKUUPJI4kE?si=wRqQJcx6QkWEQSWz_hzj_A",
+                "google":"https://podcasts.google.com/feed/aHR0cHM6Ly92aWxsYWlud2FzcmlnaHQubGlic3luLmNvbS9yc3M/episode/OGU4OTljNjRmOTBjNGY0YWEyMTlkNTkyMTZhMjQ3NzY?sa=X&ved=0CAIQuIEEahcKEwiwoLbGzJb-AhUAAAAAHQAAAAAQEw",
+                "web":"https://www.fromsuperheroes.com/post/untitled-102"
+            },
+            {
+                "eptitle":"Sleepy Hollow",
+                "date":"2020-10-29",
+                "description":"When Lady Van Tassel is told to leave by her unscrupulous landlord she hatches a wacky plot to get him back. With the help of her sister, and a long absent childhood friend, she turns the entire town of Sleepy Hollow on its head.",
+                "applepod":"https://podcasts.apple.com/us/podcast/sleepy-hollow/id1438524435?i=1000496474718",
+                "spotify":"https://open.spotify.com/episode/2ACiGxB5l9F8VbLTiLv6jU?si=UizjXsS8RVuAbK1bniFjSw",
+                "google":"https://podcasts.google.com/feed/aHR0cHM6Ly92aWxsYWlud2FzcmlnaHQubGlic3luLmNvbS9yc3M/episode/ZmFmMzIyMDQtMTA0OC00ODUyLWFjMjYtNTUzMDNkODZmMDJi?sa=X&ved=0CAIQuIEEahcKEwiwoLbGzJb-AhUAAAAAHQAAAAAQEw",
+                "web":"https://www.fromsuperheroes.com/post/the-villain-was-right-sleepy-hollow"
+            }
+        ]
+    },
+    {
+        "type":"podcast",
+        "podtitle":"The Fandom Show",
+        "image":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1680740110/AshleyCooper/Other/Podcasts/626x0w_tlwjjw.webp",
+        "episodes":[
+            {
+                "eptitle":"The Matrix (with Ashley Cooper)",
+                "date":"2022-01-04",
+                "description":"It’s bullet time! This week Ashley Cooper shows how deep the rabbit hole goes as we talk about; The Matrix Trilogy! Plug in to all of the movie's iconic moments, the OG viral marketing campaign, the pleather aesthetic that defined a generation and how trans-ness is programmed into The Matrix’s code. Whoa.",
+                "applepod":"https://podcasts.apple.com/us/podcast/the-matrix-with-ashley-cooper/id1602550664?i=1000546438027",
+                "spotify":"https://open.spotify.com/episode/16NQa2RlHLXfgwWmhqwcJT?si=imRf8GRuQAO-AlSuA2KHog",
+                "web":"https://thefandomshow.com/3-the-matrix-with-ashley-cooper"
+            }
+        ]
+    },
+    {
+        "type":"podcast",
+        "podtitle":"Women On Screen Out Loud",
+        "image":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1680740406/AshleyCooper/Other/Podcasts/626x0w_cshg3v.webp",
+        "episodes":[
+            {
+                "eptitle":"Ashley Cooper, Writer and Actor - 'The Only One in the Room'",
+                "date":"2021-12-14",
+                "description":"Writer Ashley Cooper gives us an inside look into the writing room, frustrations in token hiring, and what it takes to stand up against the higher powers.",
+                "applepod":"https://podcasts.apple.com/ca/podcast/ashley-cooper-writer-and-actor-the-only-one-in-the-room/id1439105903?i=1000544936282",
+                "spotify":"https://open.spotify.com/episode/6G8nm4LZRiXPjce3khqHCt?si=zvfTRA1HRhmYgFAYkkuwjg",
+                "google":"https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5yZWRjaXJjbGUuY29tL2UxMTMzNTlmLTgzZjEtNDNiMy04ZWM3LWRjYmUzMjdlZDNlYQ/episode/ZWYyM2M3YzYtZWM0NC00NzRlLTg5ZWUtZDk3ZmU1ZDNjZWJh?sa=X&ved=0CAUQkfYCahcKEwi468aWy5b-AhUAAAAAHQAAAAAQSA"
+            }
+        ]
+    },
+    {
+        "type":"podcast",
+        "podtitle":"Game Dev With a Shot of Jameson",
+        "image":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1680740608/AshleyCooper/Other/Podcasts/626x0w_g6lqhr.webp",
+        "episodes":[
+            {
+                "eptitle":"Ashley Cooper - Writer on Later Daters, Gotham Knights, and more!",
+                "date":"2021-10-12",
+                "description":"Today I’m joined by Ashley Cooper – Writer. We discuss her start in television and film, the move into game writing on cool projects like Gotham Knights, and why it’s important to be yourself when networking.",
+                "applepod":"https://podcasts.apple.com/us/podcast/ashley-cooper-writer-on-later-daters-gotham-knights/id1534631225?i=1000538344026",
+                "spotify":"https://open.spotify.com/episode/3zdq6TZvKExdwBl9etcqMF?si=kfl9tP9HSy6VUB05-fz9gA", 
+                "google":"https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy8zOTUwODhjMC9wb2RjYXN0L3Jzcw/episode/M2FkMzc2MWYtYzcxNS00MDJiLWI4NzQtNDZmY2VjNDQ2Yjc5?sa=X&ved=0CAIQuIEEahcKEwi468aWy5b-AhUAAAAAHQAAAAAQNA",
+                "web":"https://www.youtube.com/watch?v=BOLc3s-Oa5A"
+            }
+        ]
+    }
+]

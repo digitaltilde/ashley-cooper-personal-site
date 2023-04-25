@@ -1,0 +1,337 @@
+[
+    {
+        "name":"Warhammer 40k: Space Marine II",
+        "slug":"warhammer",
+        "genre":"Action/Shooter",
+        "developer":"Saber Interactive",
+        "year":"2023",
+        "role":"Senior Writer",
+        "duolax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1682141792/AshleyCooper/WarhammerParallax/warhammerParallax2_1pink_mrwbe0.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1682141793/AshleyCooper/WarhammerParallax/warhammerParallax2_duo_backpink_rgu2we.png"
+        ],
+        "fulllax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1682141792/AshleyCooper/WarhammerParallax/warhammerParallax2_1pink_mrwbe0.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1682141800/AshleyCooper/WarhammerParallax/warhammerParallax2_2pink_c8dyp4.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1682141805/AshleyCooper/WarhammerParallax/warhammerParallax2_3pink_xrbhjd.png"
+        ],
+        "fulllaxdepth":[0,-3,-5],
+        "ytranslation":["0px","400px"],
+        "secondary":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1676745972/AshleyCooper/WarhammerParallax/09122022_97efb1d1c98f40958a7a636988671181_f65nvn.jpg",
+        "logo":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1680634292/AshleyCooper/WarhammerParallax/warhammerlogo_gsolmh.png",
+        "reel":"https://www.youtube.com/embed/PMqvC507g1M",
+        "roledescription":"Responsible for writing mission dialogue and combat barks for a third person action title based on the popular tabletop strategy game.",
+        "summary":"Mankind is in peril. The Imperium needs you. Embody the superhuman skill and brutality of a Space Marine, the greatest of the Emperor’s warriors, unleashing deadly abilities and devastating weaponry to obliterate the relentless Tyranid hordes.",
+        "links":{
+            "steam":"https://store.steampowered.com/app/2183900/Warhammer_40000_Space_Marine_2/",
+            "xbox":"soon",
+            "ps":"soon"
+        }, 
+        "press":[]
+    },
+    {
+        "name":"Gotham Knights",
+        "slug":"gothamKnights",
+        "genre":"Action/Adventure",
+        "developer":"WB Games",
+        "year":"2022",
+        "role":"Writer",
+        "duolax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675666325/AshleyCooper/GothamKnightsParallax/games_gothamknights_duo_fore_jq1du5.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1681500134/AshleyCooper/GothamKnightsParallax/games_gothamknights_duo_back_iqvr9k.png"
+        ],
+        "fulllax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1674966478/AshleyCooper/GothamKnightsParallax/games_gothamknights_front1_c2cgfc.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1674966479/AshleyCooper/GothamKnightsParallax/games_gothamknights_front2_rwaxng.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1681500753/AshleyCooper/GothamKnightsParallax/games_gothamknights_front3_jp2glr.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1674966476/AshleyCooper/GothamKnightsParallax/games_gothamknights_front4_fwbpij.png"
+        ],
+        "fulllaxdepth":[0,-2,-4,-6],
+        "secondary":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1676746173/AshleyCooper/GothamKnightsParallax/gotham-knights-red-hood-4k-qc-2560x1440-167008506_gxxdch.jpg",
+        "logo":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1675719564/AshleyCooper/GothamKnightsParallax/GothamKnightsLogo_iealiw.png",
+        "reel":"https://www.youtube.com/embed/VSJTK8-R_sk",
+        "roledescription":"Working off an established IP, worked on world building elements, narrative collectables, emails, NPC names, VO dialogue, codex entries, and more.",
+        "summary":"Batman is dead. A new expansive, criminal underworld has swept the streets of Gotham City. It is now up to the Batman Family; Batgirl, Nightwing, Red Hood, and Robin; to protect Gotham, bring hope to its citizens, discipline to its cops, and fear to its criminals. From solving mysteries that connect the darkest chapters in the city’s history to defeating notorious villains in epic confrontations, you must evolve into the new Dark Knight and save the streets from descent into chaos.",
+        "links":{
+            "xbox":"https://www.xbox.com/en-us/games/gotham-knights",
+            "steam":"https://store.steampowered.com/app/1496790/Gotham_Knights/",
+            "ps":"https://store.playstation.com/en-us/concept/233383"
+        },
+        "press":[
+            {
+                "headline":"Gotham Knights' beautiful world and wonderful writing are undermined by sluggish fighting",
+                "subheading":"The new open-world action game has shades of Arkham but is let down by performance issues",
+                "link":"https://www.theverge.com/2022/10/20/23413694/gotham-knights-review-ps5-xbox-pc",
+                "outlet":"The Verge",
+                "author":"Tauriq Moosa",
+                "quote":"A standout is the writing and performances, as all members of the Bat Family navigate their grief and hardship with fighting crime, dealing with their past together. There are entire cutscenes dedicated solely to each member dealing with their feelings and a member of the family, who knows them best, helping them come out the other side. It’s wholesome and loving. It doesn’t advance the plot at all and is entirely skippable, but it was always welcome. I felt genuine love for these characters and their world from the game’s writers."
+            },
+            {
+                "headline":"Gotham Knights Review - Knightfall",
+                "subheading":"Gotham Knights takes the Arkham blueprint and reimagines it as a loot-brawler, often feeling similar, but where it's different, it's worse.",
+                "link":"https://www.gamespot.com/reviews/gotham-knights-review-knightfall/1900-6417983/",
+                "outlet":"Gamespot",
+                "author":"Mark Delaney",
+                "quote":"As you progress, you'll unlock character cutscenes in their base of operations, the Belfry, or out in the city... These moments are my favorite scenes in the game. Batman meant something different to each of them, and the writing captures this excellently."
+            },
+            {
+                "headline":"Gotham Knights Review: Batman Reborn",
+                "subheading":"WB Games Montréal's Gotham Knights offers a brave and bold depiction of the Batman Family, making for a unique, albeit flawed, superhero experience.",
+                "link":"https://screenrant.com/gotham-knights-game-review/",
+                "outlet":"ScreenRant",
+                "author":"Ewan Paterson",
+                "quote":"The standout element of Gotham Knights is its story and presentation of the Bat Family characters. By honing in on Batman's allies and forcing them to navigate a world without their mentor, WB Games Montréal yields emotional results."
+            }
+        ],
+        "awards":[
+            {
+                "logo":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1682100726/AshleyCooper/Other/CGA_mgpxqx.svg",
+                "title":"Best Narrative",
+                "status":"Nominee",
+                "link":"https://cgameawards.ca/cga-categories/best-narrative/",
+                "year":"2023"
+            }
+        ]
+    },
+    {
+        "name":"World War Z: Aftermath",
+        "slug":"worldWarZ",
+        "genre":"Shooter",
+        "developer":"Saber Interactive",
+        "year":"2022",
+        "role":"Writer & Voice Over Director",
+        "duolax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1682141510/AshleyCooper/WorldWarZParallax/RomeParallax3_frontpink_fhfvlp.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1682141511/AshleyCooper/WorldWarZParallax/RomeParallax3_backpink_lnjwta.png"
+        ],
+        "fulllax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1682141510/AshleyCooper/WorldWarZParallax/RomeParallax3_frontpink_fhfvlp.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1682141512/AshleyCooper/WorldWarZParallax/RomeParallax3_2pink_ng4djg.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1682141505/AshleyCooper/WorldWarZParallax/RomeParallax3_3pink_a4nh52.png"
+        ],
+        "fulllaxdepth":[0,-5,-6],
+        "secondary":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1676745907/AshleyCooper/WorldWarZParallax/rome_shot_1_final_compressed_uvtdha.png",
+        "logo":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1676091010/AshleyCooper/WorldWarZParallax/iu_gmoaor.png",
+        "reel":"https://www.youtube.com/embed/w6vnQvhCDLE",
+        "roledescription":"Wrote dialogue and directed the VO for Horde Mode DLC as well as the new Horde Mode XL.",
+        "summary":"World War Z: Aftermath is the ultimate co-op zombie shooter based on Paramount Pictures’ blockbuster film, and the next evolution of the original hit World War Z that has now captivated over 15 million players. Turn the tide of the zombie apocalypse across consoles and PC with full cross-play. Join up to three friends or play on your own with AI teammates against hordes of ravenous zombies in intense story episodes across new zombie-ravaged locations around the world: Rome, Vatican City and Russia’s Kamchatka peninsula.",
+        "links":{
+            "ps":"https://store.playstation.com/en-us/product/UP2746-CUSA14046_00-WWZAFTMTBUN000US/",
+            "xbox":"https://www.xbox.com/en-us/games/store/World-War-Z-Aftermath/9PBF1FL7K192",
+            "steam":"https://store.steampowered.com/app/699130/World_War_Z_Aftermath"
+        },
+        "press":[
+            {
+                "outlet":"AltChar",
+                "link":"https://www.altchar.com/reviews/world-war-z-horde-mode-z-review-aeTbu4u5LGIG",
+                "headline":" World War Z: Horde Mode Z Review - Prepare for the onslaught",
+                "subheading":"World War Z is an immensely satisfying, and consistently surprising, runaway success, and continues to evolve with all manner of free and paid content drops. The latest major update, the long sought after Horde mode, ups the ante in meaningful and challenging ways.",
+                "author":"Jonathan Titmuss",
+                "quote":"There's a lot more depth than we expected, and it's so pleasing to see the amount of variation every time you jump back in... [C]ampaign and competitive multiplayer were both pretty well fleshed out from the beginning."
+            },
+            {
+                "headline":" Take A First Look At World War Z's Upcoming Horde Mode XL",
+                "outlet":"Game Informer",
+                "link":"https://www.gameinformer.com/first-look/2023/01/23/take-a-first-look-at-world-war-zs-upcoming-horde-mode-xl",
+                "author":"Kyle Hilliard",
+                "quote":"World War Z is no stranger to having lots and lots of zombies, but a new mode launching tomorrow somehow stuffs even more undead into the experience with Horde Mode XL... [it] now boosts the number of on-screen enemies to 1,000, which is the most the game has ever managed to showcase at one time."
+            },
+            {
+                "headline":"World War Z: Aftermath Review (PS5) – The Horde Grows On PS5",
+                "outlet":"PSU",
+                "link":"https://www.psu.com/reviews/world-war-z-review-ps5/",
+                "author":"Neil Bolt",
+                "quote":"In the base Horde mode, the idea is that you feel a bit overwhelmed, and probably feel absolutely screwed if the wrong team of players is with you. With this upgraded version, the game is basically demanding you work together efficiently or end up as food so fast that you’d put McDonald’s to shame. There’s a gleeful hopeless feeling to it that isn’t exactly unwarranted as the intensity ramps up from round to round."
+            }
+        ]
+    }, 
+    {
+        "name":"Drag Race Superstar", 
+        "slug":"dragRaceSuperstar",
+        "genre":"Fashion",
+        "developer":"East Side Games",
+        "year":"2021",
+        "role":"Narrative Designer",
+        "duolax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675666338/AshleyCooper/DragRaceParallax/DragRaceParallax_duo_fore_r8hu8b.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1681499543/AshleyCooper/DragRaceParallax/DragRaceParallax_duo_back_mtqq2e.png"
+        ],
+        "fulllax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675475174/AshleyCooper/DragRaceParallax/DragRaceParallax_1_pawpgb.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675475173/AshleyCooper/DragRaceParallax/DragRaceParallax_2_awrnc5.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1681499090/AshleyCooper/DragRaceParallax/DragRaceParallax_3_n9io8g.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675477272/AshleyCooper/DragRaceParallax/DragRaceParallax_4_xbr1hd.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1681499537/AshleyCooper/DragRaceParallax/DragRaceParallax_5_gdiryd.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675475170/AshleyCooper/DragRaceParallax/DragRaceParallax_6_jxeomi.png"
+        ],
+        "fulllaxdepth":[0,-2,-4,-6,-6,-6],
+        "secondary":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1676746504/AshleyCooper/DragRaceParallax/image-4218187823_ojcbcu.png",
+        "logo":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1675719069/AshleyCooper/DragRaceParallax/dragracelogo_hc0doa.png",
+        "reel":"https://www.youtube.com/embed/FlDkG1MiyA4",
+        "roledescription":"Created characters to serve the needs of various gameplay and narrative functions, wrote short scenes to bridge gameplay sections and keep the player invested in the game. Approved and/or edited scripts from the writing team to fit brand voice, game engine limitations, or both. Ensured all narrative was implemented in final game in a satisfying and coherent way and collaborated with license holder on tone and style to match the IP.",
+        "summary":"Enter the iconic Werk Room and experience the fantastic fashion-conscious world of RuPaul’s Drag Race. Werk your way to be the top fashion designer and become a superstar stylist. Go shopping and select from hundreds of fashion dress-up pieces, put on that makeup and create the fiercest look to slay the runway.",
+        "links":{
+            "googleplay":"https://play.google.com/store/apps/details?id=com.eastsidegames.dragrace&gl=US",
+            "appstore":"https://apps.apple.com/us/app/rupauls-drag-race-superstar/id1553517801"
+        }, 
+        "press":[
+            {
+                "headline":"RuPaul’s Drag Race Superstar Is So Much More Than Just An Addictive Mobile Game",
+                "outlet":"Kotaku Australia",
+                "link":"https://www.kotaku.com.au/2022/03/rupauls-drag-race-superstar-addictive-mobile-game/",
+                "author":"Ky Stewart",
+                "quote":"RuPaul’s Drag Race Superstar amplifies the beauty in being who you want to be and allowing yourself the freedom to do so. To me, this is what gaming is all about at its core."
+            }
+        ], 
+        "awards":[
+            {
+                "logo":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1682105616/AshleyCooper/Other/iu_tzkgpp.png",
+                "title":"People's Choice Award",
+                "status":"Finalist",
+                "link":"https://www.mobilegamesawards.com/winners-2022/",
+                "year":2022
+            },
+            {
+                "logo":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1682101247/AshleyCooper/Other/_logo_white_yktzuy.png",
+                "title":"Best Mobile Game - Simulation",
+                "status": "Gold Winner",
+                "link":"https://www.eastsidegames.com/rupauls-drag-race-superstar-nyx-award/",
+                "year":2022
+            }
+        ]
+    },
+    {
+        "name":"Solace State",
+        "slug":"solaceState",
+        "genre":"Visual Novel",
+        "developer":"Visual Foundry",
+        "year":"Coming Soon", 
+        "role":"Writer",
+        "duolax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675666399/AshleyCooper/SolaceStateParallax/SolaceStateParallax_duo_fore_bagxsl.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675666399/AshleyCooper/SolaceStateParallax/SolaceStateParallax_duo_back_yojvir.png"
+        ],
+        "fulllax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675550647/AshleyCooper/SolaceStateParallax/SolaceStateParallax1_xiicdf.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675550648/AshleyCooper/SolaceStateParallax/SolaceStateParallax2_tsgbkr.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675551139/AshleyCooper/SolaceStateParallax/SolaceStateParallax3_ekfr3r.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675551142/AshleyCooper/SolaceStateParallax/SolaceStateParallax4_e3owov.png"
+        ],
+        "fulllaxdepth":[0,-4,-5,-8],
+        "secondary":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1681498011/AshleyCooper/SolaceStateParallax/SolaceStateSecondary_vlbvip.png",
+        "logo":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1675719665/AshleyCooper/SolaceStateParallax/solacestatelogo_upnvp8.png",
+        "reel":"https://www.youtube.com/embed/DuerSmOWGQE",
+        "roledescription":"Worked remotely with Executive Producer/Lead Writer on plot, pacing, and character for a cyberpunk visual novel. Wrote scenes including prose and branching dialogue and assisted with narrative design by pitching opportunities for story branches.",
+        "summary":"Solace State is a 3D cyberpunk visual novel about a young hacker, Chloe, who comes to her political awakening as she seeks her friends in a biotech surveillance society. Your choices in intimate conversations, the kindling of relationships, and escalating tensions lead to multiple endings. Change the personal, revolutionize the political.",
+        "links":{
+            "steam":"https://store.steampowered.com/app/928000/Solace_State_Emotional_Cyberpunk_Stories/",
+            "xbox":"soon"
+        },
+        "press":[
+            {
+                "headline":"Don’t like visual novels? These games might change your mind",
+                "subheading":"Four games that are reinventing the genre ",
+                "outlet":"The Verge",
+                "link":"https://www.theverge.com/2018/9/25/17879736/visual-novel-new-games-genre-neo-cab-solace-state-admiralo-island-witches-club-necrobarista",
+                "author":"Katherine Cross",
+                "quote":"But it’s the game’s meditation on the nature of rebellion, its psychology and its costs, that really make it... The interplay between him, your friend, and the community leader is sublime... It feels like a delicate balance."
+            },
+            {
+                "headline":"Play These Indie Video Games From Developers of Color",
+                "subheading":"Indie games bring innovation and artistry to the video game industry, and people of color bring diversity and perspective to indie games. These PoC-developed indie games from the Game Devs of Color Expo should be on your radar.",
+                "outlet":"PC Mag",
+                "link":"https://www.pcmag.com/news/14-steam-demos-from-the-game-devs-of-color-expo-you-can-play-this-weekend",
+                "author":"Jordan Minor",
+                "quote":"Visual novels are the perfect genre for developers who put excellent writing and intriguing storytelling above all else. For a cyberpunk game that cares more about characterization and conversations than car chases, check out Solace State."
+            },
+            {
+                "headline":"How Ubisoft Toronto Is Helping To Spotlight Indie Games",
+                "outlet":"Ubisoft News",
+                "link":"https://news.ubisoft.com/en-us/article/7FqvrXTBVX5f7Pw7opSFry/how-ubisoft-toronto-is-helping-to-spotlight-indie-games",
+                "author":"Lesley Phord-Toy",
+                "quote":"Solace State from Vivid Foundry is well-thought-out, well-scoped, visually polished, and explores compelling and timely themes."
+            }
+        ]
+    },
+    {
+        "name":"Later Daters",
+        "slug":"laterDaters",
+        "genre":"Visual Novel",
+        "developer":"Bloom Digital",
+        "year":"2020",
+        "role":"Writer",
+        "duolax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675666379/AshleyCooper/LaterDatersParallax/LaterDatersParallax_duo_fore_gux2qp.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675666379/AshleyCooper/LaterDatersParallax/LaterDatersParallax_duo_back_gscqqo.png"
+        ],
+        "fulllax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675654593/AshleyCooper/LaterDatersParallax/LaterDatersParallax1_mhjk0f.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675654593/AshleyCooper/LaterDatersParallax/LaterDatersParallax2_x8p8eg.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675655608/AshleyCooper/LaterDatersParallax/LaterDatersParallax2_2_aogp6s.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675654591/AshleyCooper/LaterDatersParallax/LaterDatersParallax4_opodzq.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1675654590/AshleyCooper/LaterDatersParallax/LaterDatersParallax5_ubjoyu.png"
+        ],
+        "fulllaxdepth":[0,-1,-2,-4,-6],
+        "secondary":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1680834341/AshleyCooper/LaterDatersParallax/later-daters-game-1_lpyge9.jpg",
+        "logo":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1675719623/AshleyCooper/LaterDatersParallax/laterdaterslogo_u6mu2g.png",
+        "reel":"https://www.youtube.com/embed/9m8jh3XPdVU",
+        "roledescription":"Wrote scenes for chapters 5, 6, and 7, working within pre-established tone and character voice. Worked off outlines provided by the Narrative Designer while being given the freedom to explore new branching paths so long as they did not interrupt the critical path.",
+        "summary":"You’re the newest resident at Ye Olde Retirement Community, where you’ll meet a cast of sexy seniors who are all dying (not literally) to meet you. It’s a lot like summer camp, but with orthopedic shoes, bridge clubs, and more jell-o. It’s an adjustment as you settle in, but who knows: maybe these will turn out to be the best years of your life! Later Daters makes the bold claim that adventure, passion, and transformation are not experiences reserved for the young. The game challenges ageism and suggests growing old is the purest human experience - one that can teach us poignant lessons about our capacity for love.",
+        "links":{
+            "steam":"https://store.steampowered.com/app/1040390/Later_Daters__Premium/",
+            "xbox":"https://www.xbox.com/en-us/games/store/Later-Daters/9N185JJ2MR3K",
+            "itch":"https://bloomdigital.itch.io/later-daters"
+        }, 
+        "press":[
+            {
+                "headline":"Later Daters Review",
+                "outlet":"The XBox Hub",
+                "link":"https://www.thexboxhub.com/later-daters-review/",
+                "author":"Gareth Brierley",
+                "quote":"The game also deals brilliantly well with tougher topics – death, ageing, dementia, sex, and love as you get older, shying away from stereotypical roles. It’s clever and certainly made me think about how I view older people."
+            },
+            {
+                "headline":"Later Daters PC Review",
+                "subheading":"Love Never Gets Old",
+                "outlet":"GameSpace",
+                "link":"https://www.gamespace.com/featured/later-daters-pc-review/",
+                "author":"Suzie Ford",
+                "quote":"Later Daters made me happy. It made me realize that love never grows old, that it never dies. It made me less anxious about my own golden years in its own way, it gave me hope for the future. Lofty words, I know, but true nonetheless. It’s truly one of the most enjoyable games I’ve played in a very, very long time."
+            },
+            {
+                "headline":"Review | Later Daters",
+                "outlet":"LifeisXbox.eu",
+                "link":"https://www.lifeisxbox.eu/review-later-daters/",
+                "author":"VicciVulpix",
+                "quote":"The sweet and steamy story you witness in Later Daters is without a doubt unique, open, and hits multiple subjects and topics along the way. The story is compact but eventful, with every chapter focusing on different residents and occurrences."
+            }
+        ]
+    },
+    {
+        "name":"Smash Ball",
+        "slug":"smashBall",
+        "genre":"Sci-Fi Sport",
+        "developer":"Game Pill",
+        "year":"Coming Soon",
+        "role":"Writer",
+        "duolax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1676660734/AshleyCooper/SmashBallParallax/spaceballparallax1_gpwsdn.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1681504814/AshleyCooper/SmashBallParallax/spaceballparallax_duo_back_cfqhxu.png"
+        ],
+        "fulllax":[
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1676660734/AshleyCooper/SmashBallParallax/spaceballparallax1_gpwsdn.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1681504813/AshleyCooper/SmashBallParallax/spaceballparallax2_tfma3v.png",
+            "https://res.cloudinary.com/dlo7ailaj/image/upload/v1681505536/AshleyCooper/SmashBallParallax/spaceballparallax3_yshfrj.png"
+        ],
+        "fulllaxdepth":[0,-3,-5],
+        "secondary":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1676747845/AshleyCooper/SmashBallParallax/smash_banner_use_rqras5.jpg",
+        "logo":"https://res.cloudinary.com/dlo7ailaj/image/upload/v1676661612/AshleyCooper/SmashBallParallax/smash-ball-triangle-300x236_pslfwl.png",
+        "reel":"https://www.youtube.com/embed/24-rg4YLAcw",
+        "roledescription":"Wrote dialog for coach character that leads the player through learning game mechanics, match rules, and lore. Also wrote dialog for the announcers, reacting to in-game events like scoring, environmental hazards, power-ups, wins/losses, etc.",
+        "summary":"Smash Ball is a high-speed action sports game for PC, console and mobile, played with or against friends in a 1v1 / 2v2 hybrid of arcade-style ping pong played with customizable mech athletes. Destroy your opponents LITERALLY. Launch rockets, throw sticky bombs, anything goes in the SMASH BALL arena if it means winning. Customize your parts to suit your play style. Manage your team, resources, and booster cards to retain sponsors, grow your fan base and win.",
+        "links":{
+            "steam":"https://store.steampowered.com/app/905360/Smash_Ball/"
+        }, 
+        "press":[]
+    }
+]
