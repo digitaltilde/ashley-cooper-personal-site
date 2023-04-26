@@ -45,7 +45,7 @@ $button-hover-transition: all 0.2s;
 
 @mixin compressed-tile-aspect{
     @media screen and (max-width:$mobile-breakpoint) {
-        aspect-ratio: 2;
+        aspect-ratio: 2.5;
     }
     @media screen and (min-width:$mobile-breakpoint) and (max-width: $desktop-breakpoint) {
         aspect-ratio: 3;
@@ -503,7 +503,7 @@ header {
 
 
     #warhammerParallax {
-        @include tile-offset-adjustment(40%);
+        @include tile-offset-adjustment(50%);
     }
     #gothamKnightsParallax {
         @include tile-offset-adjustment(30%);
@@ -527,7 +527,7 @@ header {
     @include expanded-tile-aspect();
     
     #warhammerParallax {
-        @include tile-offset-adjustment(55%);
+        @include tile-offset-adjustment(65%);
     }
     #gothamKnightsParallax {
         @include tile-offset-adjustment(40%);
@@ -540,6 +540,9 @@ header {
     }
     #solaceStateParallax {
         @include tile-offset-adjustment(60%);
+    }
+    #laterDatersParallax {
+        @include tile-offset-adjustment(20%);
     }
     #smashBallParallax {
         @include tile-offset-adjustment(35%);

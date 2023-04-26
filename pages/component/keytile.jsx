@@ -17,6 +17,7 @@ export default function KeyTile(props) {
     }
     console.log(browserAspect);
 
+    const aspectModifier = (browserAspect + 1)/2;
 
     const cloudinaryUrl = function(image) {
         return buildUrl(image, {
@@ -50,11 +51,11 @@ export default function KeyTile(props) {
     const fillLayerList = function() {
         const layerList = [];
         if (!expanded && !gamePage) {
-            layerList.push(layerMaker(game.duolax[1], (-4 * browserAspect), "background"));
+            layerList.push(layerMaker(game.duolax[1], -4 * aspectModifier, "background"));
             layerList.push(layerMaker(game.duolax[0], 0, "foreground"));
         } else {
             for (let i = game.fulllax.length - 1; i >= 0; i--) {
-                layerList.push(layerMaker(game.fulllax[i], (game.fulllaxdepth[i] * browserAspect), "parallaxLayer"))
+                layerList.push(layerMaker(game.fulllax[i], (game.fulllaxdepth[i] * aspectModifier), "parallaxLayer"))
             }
         }
         return layerList;
