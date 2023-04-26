@@ -26,7 +26,7 @@ export default function InfoPreview(props) {
         </div>
         {props.more ? 
         <Link href={`/${props.game.slug}`}>
-            <button class="moreInfoButton" >
+            <button class="moreInfoButton" style={{width:151}}>
                 More Info
             </button>
         </Link>

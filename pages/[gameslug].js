@@ -7,12 +7,16 @@ import KeyTile from "./component/keytile";
 import games from "../lib/games.json";
 import KeyGameInfo from "./component/keygameinfo";
 import GameLinks from "./component/gameLinks";
+import Image from "next/image";
+import cloudinaryUrl from "./component/cloudinaryUrl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function GamePage({index}) {
     const game = games[index];
     const reelUrl = new URL(game.reel);
+
+    console.log(game.secondaryWidth);
 
     const awardsSection = function() {
         if (game.hasOwnProperty("awards") === false) {
@@ -22,7 +26,7 @@ export default function GamePage({index}) {
             {game.awards.map(e => (
                 <a href={e.link} target="_blank" className="awardTile" key={e.title}>
                     <div className="logoContainer" >
-                        <img src={e.logo} />
+                        <img src={cloudinaryUrl(e.logo)} />
                     </div>
                     <h4>{e.status}<br/>{e.title}<br/>{e.year}</h4>
                 </a>
@@ -41,8 +45,17 @@ export default function GamePage({index}) {
         <Header active="Recent Work"/>
         <main className='gameSection'>
 
-            <div className="logoHeader" style={{backgroundImage:`url(${game.secondary}`}}>
-                <img src={game.logo} className="logoHeaderLogo logoStyling" />
+            <div className="logoHeader">
+                <Image 
+                    src={cloudinaryUrl(game.secondary)}
+                    className="logoHeaderBackground"
+                    width={game.secondaryWidth}
+                    height={game.secondaryHeight}
+                    sizes="(max-width: 1081px) 100vw,
+                    (max-width: 2161px) 80vw,
+                    60vw"
+                />
+                <img src={cloudinaryUrl(game.logo)} className="logoHeaderLogo logoStyling" />
                 {/* <img src={game.secondary} className="logoHeaderBackground" /> */}
             </div>
 
@@ -87,7 +100,7 @@ export default function GamePage({index}) {
                 ))}
             </div>
 
-            <Link href="/recentwork"><button>
+            <Link href="/recentwork"><button style={{width:292}}>
                 <FontAwesomeIcon icon={faArrowLeft} className="fa"/>
                 &nbsp;&nbsp;Back to Recent Work
             </button></Link>

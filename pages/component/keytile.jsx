@@ -1,6 +1,6 @@
 import React from "react";
-import buildUrl, { buildImageUrl } from "cloudinary-build-url";
-import { CldImage } from 'next-cloudinary';
+import Image from "next/image";
+import buildUrl from "cloudinary-build-url";
 import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import KeyGameInfo from "./keygameinfo";
 
@@ -35,7 +35,7 @@ export default function KeyTile(props) {
 
     const layerMaker = function (source, speed, alt) {
         return (<ParallaxBannerLayer speed={speed}>
-            <CldImage 
+            <Image 
                 src={cloudinaryUrl(source)}
                 alt={alt}
                 loading={(props.gameIndex < 3) && (expanded === false) ? "eager" : "lazy"}

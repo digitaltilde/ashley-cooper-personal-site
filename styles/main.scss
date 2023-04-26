@@ -180,6 +180,7 @@ button {
     padding:15px 20px;
     display:flex;
     align-items: center;
+    text-align: center;
     font: {
         family:$body-font;
         weight:300;
@@ -391,6 +392,7 @@ header {
 }
 
 .logoHeader {
+    position: relative;
     width:100%;
     aspect-ratio: 1.5;
     max-height:$compressed-tile-height;
@@ -402,10 +404,19 @@ header {
     align-items: center;
 
     .logoHeaderLogo {
-        position: relative;
+        position: absolute;
         transform: none;
-        top:0;
-        left:0;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .logoHeaderBackground {
+        position: absolute;
+        display: block;
+        object-fit: cover;
+        width:100%;
+        height:100%;
     }
 }
 
@@ -614,7 +625,7 @@ header {
     .fullPageGameInfo {
         display:flex;
         flex-direction: column;
-        gap:30px;
+        gap:40px;
         padding:0px 7%;
         font: {
             weight:300 !important;
@@ -791,7 +802,6 @@ header {
     .podHeader {
         display: flex;
         flex-direction: row;
-        // gap:30px;
         background-color: $element-background-color;
         box-shadow: $box-element-shadow;
         overflow: hidden;
@@ -833,7 +843,6 @@ header {
                     text-align: center;
                     font-size: 1.2rem;
                     padding:10px 15px;
-                    // font-weight: 500;
                     .multipodDropdown {
                         font-size: 1.6rem;
                     }
