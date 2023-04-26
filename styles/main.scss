@@ -72,6 +72,13 @@ $button-hover-transition: all 0.2s;
     }
 }
 
+@mixin tile-offset-adjustment($x) {
+    div img {
+        transform: translateY(-$x);
+        top:$x;
+    }
+}
+
 .floatInDisabled {
     transform: translateY(50px);
     opacity:0;
@@ -493,15 +500,49 @@ header {
 .keyTile.small {
     // height:$compressed-tile-height;
     @include compressed-tile-aspect();
-    #gothamKnightsParallax div {
-        background-position-y: 25% !important;
+
+
+    #warhammerParallax {
+        @include tile-offset-adjustment(40%);
     }
+    #gothamKnightsParallax {
+        @include tile-offset-adjustment(30%);
+    }
+    #worldWarZParallax {
+        @include tile-offset-adjustment(40%);
+    }
+    #dragRaceSuperstarParallax {
+        @include tile-offset-adjustment(35%);
+    }
+    #solaceStateParallax {
+        @include tile-offset-adjustment(60%);
+    }
+    #smashBallParallax {
+        @include tile-offset-adjustment(30%);
+    }
+    
 }
 .keyTile.large {
     // height:$expanded-tile-height;
     @include expanded-tile-aspect();
-    #gothamKnightsParallax div {
-        background-position-y: 33% !important;
+    
+    #warhammerParallax {
+        @include tile-offset-adjustment(55%);
+    }
+    #gothamKnightsParallax {
+        @include tile-offset-adjustment(40%);
+    }
+    #worldWarZParallax{
+        @include tile-offset-adjustment(30%);
+    }
+    #dragRaceSuperstarParallax {
+        @include tile-offset-adjustment(40%);
+    }
+    #solaceStateParallax {
+        @include tile-offset-adjustment(60%);
+    }
+    #smashBallParallax {
+        @include tile-offset-adjustment(35%);
     }
 }
 
@@ -536,12 +577,6 @@ header {
         // height:$compressed-tile-height;
         @include compressed-tile-aspect();
         filter: $compressed-tile-filter;
-        transition: $keytile-transition;
-        div{
-            img{
-                width:100%
-            }
-        }
         
     }
     .keyGameInfo{
@@ -554,19 +589,17 @@ header {
     .fullTile {
         // height:$expanded-tile-height;
         @include expanded-tile-aspect();
-        transition: $keytile-transition;
-        div{
-            img{
-                width:100%
-            }
-        }
     }
 
-    #laterDatersParallax div {
-        background-position-y: top !important;
-    }
-    #dragRaceSuperstarParallax div {
-        background-position-y: 35% !important;
+    .compressedTile, .fullTile {
+        transition: $keytile-transition;
+        div img {
+            width:100%;
+            height:auto;
+            position: relative;
+            object-fit: cover;
+            object-position: center;
+        }
     }
 }
 
@@ -592,9 +625,11 @@ header {
 }
 
 .gamesSection {
+    // animation: 1s ease-out 0s 1 basic-load;
     @include main-content-panel();
 
     .workTile{
+        animation: 1s ease-out 0s 1 basic-load;
         // animation-name: basic-load;
         // animation-duration: 1s;
         // animation-timing-function: ease-in-out;
@@ -738,10 +773,10 @@ header {
 }
 
 .pressMain {
+    animation: 1s ease-out 0s 1 basic-load;
     max-width: 800px;
 
     .multipodContainer {
-        animation: 1s ease-out 0s 1 basic-load;
         display: flex;
         flex-direction: column;
         gap:20px;
@@ -870,7 +905,7 @@ header {
         visibility:hidden;
         opacity: 0;
         height:0px;
-        transform: translateY(-50%) scaleY(0%) ;
+        transform: translateY(-50%) scaleY(0%);
         transition: all 0.4s;
     }
 }

@@ -7,11 +7,11 @@ import games from "lib/games.json";
 import { useState } from 'react';
 
 const createWorkTile = function(e, i, currentOpenState, setTheOpenState) {
-  const [loaded, setLoaded] = useState(false);
 
-  return (<div className={`workTile ${loaded ? "floatInDisabled" : "floatInEnabled"}`} key={e.slug}>
+  return (<div className={`workTile`} key={e.slug}>
     <KeyTile
       game={e}
+      gameIndex={i}
       openState={currentOpenState}
       setOpenState={setTheOpenState}
     />

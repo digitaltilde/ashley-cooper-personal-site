@@ -5,6 +5,7 @@ const nextConfig = {
           'res.cloudinary.com'
         ],
     },
+    
     reactStrictMode: true,
     async redirects() {
         return [

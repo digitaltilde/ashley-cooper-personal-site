@@ -5,6 +5,7 @@ import Header from 'pages/component/header.jsx';
 import Footer from 'pages/component/footer.jsx';
 
 export default function About() {
+
     return(<>
         <Head>
             <title>Ashley Cooper | About</title>
