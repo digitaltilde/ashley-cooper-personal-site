@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import buildUrl from "cloudinary-build-url";
+import cloudinaryUrl from "./cloudinaryUrl";
 import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import KeyGameInfo from "./keygameinfo";
 
@@ -19,21 +19,12 @@ export default function KeyTile(props) {
 
     const aspectModifier = (browserAspect + 1)/2;
 
-    const cloudinaryUrl = function(image) {
-        return buildUrl(image, {
-        cloud: {
-            cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME
-        }
-    })};
+    const findPlaceholder = function (gameSlug, full, layer) {
+
+    }
 
 
-    // const imageSizer = function (url, width) {
-    //     const [urlStart, urlEnd] = url.split("/upload/");
-    //     const newAddress = new URL(urlStart + `/upload/w_${width}/` + urlEnd);
-    //     return newAddress;
-    // }
-
-    const layerMaker = function (source, speed, alt) {
+    const layerMaker = function (source, speed, alt, placeholder) {
         return (<ParallaxBannerLayer speed={speed}>
             <Image 
                 src={cloudinaryUrl(source)}
@@ -44,6 +35,7 @@ export default function KeyTile(props) {
                 sizes="(max-width: 1081px) 100vw,
                     (max-width: 2161px) 80vw,
                     60vw"
+                blurDataURL={placeholder}
             />
         </ParallaxBannerLayer>)
     }
@@ -51,11 +43,26 @@ export default function KeyTile(props) {
     const fillLayerList = function() {
         const layerList = [];
         if (!expanded && !gamePage) {
-            layerList.push(layerMaker(game.duolax[1], -4 * aspectModifier, "background"));
-            layerList.push(layerMaker(game.duolax[0], 0, "foreground"));
+            layerList.push(layerMaker(
+                game.duolax.length === 1 ? game.duolax[0][0] : game.duolax[1][0], 
+                -4 * aspectModifier, 
+                "background",
+                game.duolax.length === 1 ? game.duolax[0][1] : game.duolax[1][1],
+            ));
+            layerList.push(layerMaker(
+                game.duolax.length === 1 ? game.fulllax[0][0] : game.duolax[0][0], 
+                0, 
+                "foreground",
+                game.duolax.length === 1 ? game.fulllax[0][1] : game.duolax[0][1],
+            ));
         } else {
             for (let i = game.fulllax.length - 1; i >= 0; i--) {
-                layerList.push(layerMaker(game.fulllax[i], (game.fulllaxdepth[i] * aspectModifier), "parallaxLayer"))
+                layerList.push(layerMaker(
+                    game.fulllax[i][0], 
+                    (game.fulllaxdepth[i] * aspectModifier), 
+                    "parallaxLayer",
+                    game.fulllax[i][1]
+                ))
             }
         }
         return layerList;
