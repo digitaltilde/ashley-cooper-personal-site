@@ -48,6 +48,7 @@ export default function GamePage({index}) {
             <div className="logoHeader">
                 <Image 
                     src={cloudinaryUrl(game.secondary)}
+                    alt={game.secondaryalt}
                     className="logoHeaderBackground"
                     width={game.secondaryWidth}
                     height={game.secondaryHeight}

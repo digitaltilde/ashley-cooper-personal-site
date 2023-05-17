@@ -1,7 +1,9 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
 import Header from 'pages/component/header.jsx';
 import Footer from 'pages/component/footer.jsx';
+import cloudinaryUrl from "pages/component/cloudinaryUrl";
 import press from 'lib/press.json';
 import { useState } from "react";
 import { FaPodcast, FaSpotify } from "react-icons/fa";
@@ -36,7 +38,22 @@ export default function Press() {
                 <div className={expandState === e.podtitle ? "multipodContainer" : "multipodContainer disabled"}>
                     <div className="podHeader multi">
                         <a href={e.web} target="_blank">
-                            <img src={e.image} className="podArt"/>
+                            <Image 
+                                alt={`Podcast artwork for ${e.podtitle}`}
+                                src={cloudinaryUrl(e.image, {
+                                    transformation: {
+                                        resize: {
+                                            width:500,
+                                            height:500
+                                        }
+                                    }
+                                })} 
+                                placeholder="blur"
+                                blurDataURL={e.artworkBlur}
+                                className="podArt"
+                                width="500"
+                                height="500"
+                            />
                         </a>
                         <div className="podText">
                             <div>
@@ -89,7 +106,10 @@ export default function Press() {
             {singlePodcasts.map(e => (
                 <div className="podHeader single">
                     <a href={e.episodes[0].web ? e.episodes[0].web : e.episodes[0].spotify} target="_blank">
-                        <img src={e.image} className="podArt"/>
+                        {<img 
+                            src={e.image} 
+                            className="podArt"
+                        />}
                     </a>
                     <div className="podText">
                         <a href={e.episodes[0].web ? e.episodes[0].web : e.episodes[0].spotify} target="_blank">

@@ -14,7 +14,9 @@ export default function Header(props) {
         if (props.active == title) {
             thisClass = thisClass + " active";
         }
-        return <Link href={`/${title.toLowerCase().replace(" ","")}`} key={title} className={thisClass}>{title}</Link>
+        return (<Link href={`/${title.toLowerCase().replace(" ","")}`} key={title} className={thisClass}>
+            <h4>{title}</h4>
+        </Link>)
     }
 
     return (<header>
@@ -24,7 +26,9 @@ export default function Header(props) {
             </a>
             
             <nav>
-                <p className="navExpand" onClick={e => (setNavState(e => (!e)))}><FontAwesomeIcon className="faIcon" icon={navState ? faCaretUp : faCaretDown}/></p>
+                <p className="navExpand" onClick={e => (setNavState(e => (!e)))}>
+                    <FontAwesomeIcon className="faIcon" icon={navState ? faCaretUp : faCaretDown}/>
+                </p>
                 {navState ? links.map((e) => linkGen(e, true)) : ""}
                 {links.map((e) => linkGen(e, false))}
             </nav>

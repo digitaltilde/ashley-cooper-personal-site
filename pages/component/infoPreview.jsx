@@ -13,20 +13,19 @@ export default function InfoPreview(props) {
                     width="100%"
                     src={reelUrl}
                     title="YouTube video player" 
-                    frameborder="0" 
+                    frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
+                    allowFullScreen>
                 </iframe>
             </div>
             <div className="descriptionFrame">
-                {/* <h4 className="roleDescription">{props.game.roledescription}</h4> */}
                 <p className="gameSummary">{`"${props.game.summary}"`}</p>
                 {props.more ? <GameLinks game={props.game} /> : "" }
             </div>
         </div>
         {props.more ? 
         <Link href={`/${props.game.slug}`}>
-            <button class="moreInfoButton" style={{width:151}}>
+            <button className="moreInfoButton" style={{width:151}}>
                 More Info
             </button>
         </Link>

@@ -15,20 +15,15 @@ export default function KeyTile(props) {
     if (typeof window !== "undefined") {
         browserAspect = window.innerWidth / window.innerHeight;
     }
-    console.log(browserAspect);
 
     const aspectModifier = (browserAspect + 1)/2;
 
-    const findPlaceholder = function (gameSlug, full, layer) {
 
-    }
-
-
-    const layerMaker = function (source, speed, alt, placeholder) {
-        return (<ParallaxBannerLayer speed={speed}>
+    const layerMaker = function (source, speed, layerNumber, placeholder) {
+        return (<ParallaxBannerLayer speed={speed} key={`layer${layerNumber}`}>
             <Image 
                 src={cloudinaryUrl(source)}
-                alt={alt}
+                alt={`Layer ${layerNumber} of an image where ${game.primaryalt}`}
                 loading={(props.gameIndex < 3) && (expanded === false) ? "eager" : "lazy"}
                 width={game.laxwidth}
                 height={game.laxheight}
@@ -46,13 +41,13 @@ export default function KeyTile(props) {
             layerList.push(layerMaker(
                 game.duolax.length === 1 ? game.duolax[0][0] : game.duolax[1][0], 
                 -4 * aspectModifier, 
-                "background",
+                2,
                 game.duolax.length === 1 ? game.duolax[0][1] : game.duolax[1][1],
             ));
             layerList.push(layerMaker(
                 game.duolax.length === 1 ? game.fulllax[0][0] : game.duolax[0][0], 
                 0, 
-                "foreground",
+                1,
                 game.duolax.length === 1 ? game.fulllax[0][1] : game.duolax[0][1],
             ));
         } else {
@@ -60,7 +55,7 @@ export default function KeyTile(props) {
                 layerList.push(layerMaker(
                     game.fulllax[i][0], 
                     (game.fulllaxdepth[i] * aspectModifier), 
-                    "parallaxLayer",
+                    (i + 1),
                     game.fulllax[i][1]
                 ))
             }
@@ -71,7 +66,7 @@ export default function KeyTile(props) {
     return (
     <div
         className={gamePage || expanded ? "keyTile large" : "keyTile small"}
-        onClick={gamePage ? "" : (e) => setOpenState((f) => f===game.slug ? "none" : `${game.slug}`)}
+        onClick={gamePage ? (e) => {} : (e) => setOpenState((f) => f===game.slug ? "none" : `${game.slug}`)}
     >
         <ParallaxBanner
             className={expanded || gamePage ? "fullTile" : "compressedTile"}
@@ -83,7 +78,11 @@ export default function KeyTile(props) {
             expanded 
             ? <KeyGameInfo game={game} title={true}/> : 
             // <img src={game.logo} className="outerGameLogo logoStyling"/>
-            <img src={cloudinaryUrl(game.logo)} className="outerGameLogo logoStyling"/>
+            <img 
+                src={cloudinaryUrl(game.logo)} 
+                className="outerGameLogo logoStyling"
+                alt={`The ${game.name} logo`}
+            />
         }
     </div>);
 }
