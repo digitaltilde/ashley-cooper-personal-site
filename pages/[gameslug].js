@@ -1,14 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import Header from "./component/header";
-import Footer from "./component/footer";
-import KeyTile from "./component/keytile";
+import Header from "../component/header";
+import Footer from "../component/footer";
+import KeyTile from "../component/keytile";
 import games from "../lib/games.json";
-import KeyGameInfo from "./component/keygameinfo";
-import GameLinks from "./component/gameLinks";
+import KeyGameInfo from "../component/keygameinfo";
+import GameLinks from "../component/gameLinks";
 import Image from "next/image";
-import cloudinaryUrl from "./component/cloudinaryUrl";
+import cloudinaryUrl from "../component/cloudinaryUrl";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
@@ -22,11 +22,14 @@ export default function GamePage({index}) {
         if (game.hasOwnProperty("awards") === false) {
             return "";
         }
-        return (<div className="awardsContainter">
+        return (<div className="awardsContainter" key={`${game.name} awards`}>
             {game.awards.map(e => (
-                <a href={e.link} target="_blank" className="awardTile" key={e.title}>
+                <a href={e.link} target="_blank" rel="noreferrer" className="awardTile" key={e.title}>
                     <div className="logoContainer" >
-                        <img src={cloudinaryUrl(e.logo)} />
+                        <img 
+                            src={cloudinaryUrl(e.logo)}
+                            alt={`The ${e.org} logo`}
+                        />
                     </div>
                     <h4>{e.status}<br/>{e.title}<br/>{e.year}</h4>
                 </a>
@@ -56,8 +59,11 @@ export default function GamePage({index}) {
                     (max-width: 2161px) 80vw,
                     60vw"
                 />
-                <img src={cloudinaryUrl(game.logo)} className="logoHeaderLogo logoStyling" />
-                {/* <img src={game.secondary} className="logoHeaderBackground" /> */}
+                <img 
+                    src={cloudinaryUrl(game.logo)} 
+                    className="logoHeaderLogo logoStyling" 
+                    alt={`The ${game.name} logo`}
+                />
             </div>
 
             <div className="fullPageGameInfo">
@@ -89,12 +95,12 @@ export default function GamePage({index}) {
             {awardsSection()}
 
             <div className="reviewSection" >
-                {game.press.map((e) => (
-                    <div className="pressQuoteDiv">
-                        <h1 className="quoteMark front">"</h1>
+                {game.press.map((e,i) => (
+                    <div className="pressQuoteDiv" key={`Quote ${i}`}>
+                        <h1 className="quoteMark front">&quot;</h1>
                         <h4 className="pressQuote">{e.quote}</h4>
-                        <h1 className="quoteMark back">"</h1>
-                        <a href={e.link} target="_blank" className="pressCrediting">
+                        <h1 className="quoteMark back">&quot;</h1>
+                        <a href={e.link} target="_blank" rel="noreferrer" className="pressCrediting">
                             {`- ${e.author} for `}<u>{e.outlet}</u>
                         </a>
                     </div>

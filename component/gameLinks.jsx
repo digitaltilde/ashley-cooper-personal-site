@@ -7,7 +7,7 @@ export default function GameLinks(props) {
     const checkPlatform = function(property, icon, array) {
         if (props.game.links.hasOwnProperty(property)) {
             array.push(
-                <a className="platformButton" key={property} href={props.game.links[property]} target="_blank">
+                <a className="platformButton" key={property} href={props.game.links[property]} target="_blank" rel="noreferrer">
                     {icon}
                 </a>
             )

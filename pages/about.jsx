@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Head from "next/head";
-import Header from 'pages/component/header.jsx';
-import Footer from 'pages/component/footer.jsx';
+import Header from 'component/header.jsx';
+import Footer from 'component/footer.jsx';
 
 export default function About() {
 
@@ -37,11 +37,11 @@ export default function About() {
                     the task at-hand. She is currently a Senior Writer at EA Motive.
                 </p>
                 <p>For the past three years, Ashley has served on the jury of the&nbsp;
-                    <a href="https://www.academy.ca/WMAccess_Writers/" target="_blank">
+                    <a href="https://www.academy.ca/WMAccess_Writers/" rel="noreferrer" target="_blank">
                         Warner Bros. Discovery X Canadian Academy Writers Program
                     </a>, which selects marginalized film &amp; television writers for career support &amp;
                     mentorship and sits on the Board of Directors for&nbsp;
-                    <a href="https://dmg.to" target="_blank">
+                    <a href="https://dmg.to" rel="noreferrer" target="_blank">
                         Dames Making Games
                     </a>
                     , an organization that provides
@@ -49,7 +49,7 @@ export default function About() {
                     games are for everyone.
                 </p>
                 <div className="industryCardContainer" >
-                    <a href="https://www.academy.ca/WMAccess_Writers/" target="_blank" className="industryCard">
+                    <a href="https://www.academy.ca/WMAccess_Writers/" target="_blank" rel="noreferrer" className="industryCard">
                         <div className="industryLogo" >
                             <img 
                                 src="https://res.cloudinary.com/dlo7ailaj/image/upload/v1680836319/AshleyCooper/Other/Writers-Program-Logo-FINAL-1-1024x325_qtby2k.png"
@@ -58,7 +58,7 @@ export default function About() {
                         </div>
                         <h4>Selection Committee Member<br/>2021, 2022, & 2023</h4>
                     </a>
-                    <a href="https://dmg.to" target="_blank" className="industryCard">
+                    <a href="https://dmg.to" target="_blank" rel="noreferrer" className="industryCard">
                         <div className="industryLogo" >
                             <img 
                                 src="https://res.cloudinary.com/dlo7ailaj/image/upload/v1680836505/AshleyCooper/Other/fecc1d5a-fb41-4217-9e3f-830d2c5a1e3a_f0e3uo.png"

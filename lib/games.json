@@ -120,6 +120,7 @@
         "awards":[
             {
                 "logo":"v1682100726/AshleyCooper/Other/CGA_mgpxqx.svg",
+                "org":"Canadian Game Awards",
                 "title":"Best Narrative",
                 "status":"Nominee",
                 "link":"https://cgameawards.ca/cga-categories/best-narrative/",
@@ -265,6 +266,7 @@
         "awards":[
             {
                 "logo":"v1682105616/AshleyCooper/Other/iu_tzkgpp.png",
+                "org":"Mobile Game Awards",
                 "title":"People's Choice Award",
                 "status":"Finalist",
                 "link":"https://www.mobilegamesawards.com/winners-2022/",
@@ -272,6 +274,7 @@
             },
             {
                 "logo":"v1682101247/AshleyCooper/Other/_logo_white_yktzuy.png",
+                "org":"Nyx Awards",
                 "title":"Best Mobile Game - Simulation",
                 "status": "Gold Winner",
                 "link":"https://www.eastsidegames.com/rupauls-drag-race-superstar-nyx-award/",
@@ -353,7 +356,8 @@
         "awards":[
             {
                 "logo":"v1682619715/AshleyCooper/Other/iu_d1zwks.png",
-                "title":"Ubisoft Indie Series",
+                "org":"Ubisoft Indie Series",
+                "title":"Grand Prize",
                 "status":"Winner",
                 "link":"https://toronto.ubisoft.com/congrats-to-the-2020-winners-of-the-ubisoft-indie-series/",
                 "year":"2020"
@@ -485,6 +489,7 @@
         "awards":[
             {
                 "logo":"v1682619518/AshleyCooper/Other/iu_iobuuk.png",
+                "org":"Canadian Screen Awards",
                 "title":"Best Video Game",
                 "status":"Nominee",
                 "link":"https://www.academy.ca/2021/later-daters/",

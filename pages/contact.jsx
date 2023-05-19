@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import Header from "pages/component/header";
-import Footer from "pages/component/footer";
-import ContactForm from "./component/contactForm";
+import Header from "component/header";
+import Footer from "component/footer";
+import ContactForm from "component/contactForm";
 
 export default function Contact() {
     return (<>

@@ -1,6 +1,6 @@
 import buildUrl from "cloudinary-build-url";
 
-export default function (image, effects) {
+export default function CloudinaryUrl(image, effects) {
     const param = {
         cloud: {
             cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME

@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Header from 'pages/component/header.jsx';
-import Footer from "pages/component/footer";
-import KeyTile from 'pages/component/keytile.jsx';
-import InfoPreview from "pages/component/infoPreview";
+import Header from 'component/header.jsx';
+import Footer from "component/footer";
+import KeyTile from 'component/keytile.jsx';
+import InfoPreview from "component/infoPreview";
 import games from "lib/games.json";
 import { useState } from 'react';
 
