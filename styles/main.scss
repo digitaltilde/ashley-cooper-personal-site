@@ -881,8 +881,9 @@ header {
         }
         @media screen and (max-width:$mobile-breakpoint) {
             .podArt {
-                width:calc(100% - 30px);
-                margin:15px 15px 0 15px;
+                width:calc(100vw - 60px);
+                height:calc(100vw - 60px);
+                margin:30px 30px 0 30px;
             }
             flex-direction: column;
 
