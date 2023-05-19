@@ -30,11 +30,11 @@ export default function About() {
                 />
             {/* </div> */}
             <div className="bioWriting">
-                <p>As Narrative Lead at Saber Interactive, Ashley Cooper is focused on creating complex, compelling
-                    characters, as well as the interplay between story and gameplay. With experience across various genres,
-                    including games like Warhammer 40K: Space Marine 2, Later Daters, Gotham Knights, and RuPaul’s Drag
-                    Race Superstar, Ashley is a narrative chameleon, shaping her voice and narrative delivery dependent on 
-                    the task at-hand. She is currently a Senior Writer at EA Motive.
+                <p>Ashley Cooper is a game writer focused on creating complex, compelling characters, as well as the
+                    interplay between story and gameplay. With experience across various genres, including games like
+                    Warhammer 40K: Space Marine 2, Later Daters, Gotham Knights, and RuPaul’s Drag Race Superstar,
+                    Ashley is a narrative chameleon, shaping her voice and narrative delivery dependent on the task at-
+                    hand. She is currently a Senior Writer at EA Motive.
                 </p>
                 <p>For the past three years, Ashley has served on the jury of the&nbsp;
                     <a href="https://www.academy.ca/WMAccess_Writers/" rel="noreferrer" target="_blank">
