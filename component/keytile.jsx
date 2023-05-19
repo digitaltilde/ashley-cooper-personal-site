@@ -16,7 +16,7 @@ export default function KeyTile(props) {
         browserAspect = window.innerWidth / window.innerHeight;
     }
 
-    const aspectModifier = (browserAspect + 1)/2;
+    const aspectModifier = (browserAspect + 1)/3;
 
 
     const layerMaker = function (source, speed, layerNumber, placeholder) {
