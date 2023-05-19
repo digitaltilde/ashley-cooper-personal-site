@@ -15,7 +15,8 @@ const createWorkTile = function(e, i, currentOpenState, setTheOpenState) {
       openState={currentOpenState}
       setOpenState={setTheOpenState}
     />
-    {currentOpenState === e.slug ? <InfoPreview game={e} more={true}/> : ""}
+    {currentOpenState !== e.slug ? "" : 
+      e.message ? <h4 className="minimalMessage">{e.message}</h4>: <InfoPreview game={e} more={true}/> }
   </div>)
 }
 

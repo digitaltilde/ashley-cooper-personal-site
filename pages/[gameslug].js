@@ -14,9 +14,6 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function GamePage({index}) {
     const game = games[index];
-    const reelUrl = new URL(game.reel);
-
-    console.log(game.secondaryWidth);
 
     const awardsSection = function() {
         if (game.hasOwnProperty("awards") === false) {
@@ -71,17 +68,17 @@ export default function GamePage({index}) {
 
                 <GameLinks game={game} />
 
-                <div className="reelFrame fullpage">
+                { game.reel ? <div className="reelFrame fullpage">
                     <iframe 
                         width="100%"
                         height="100%"
-                        src={reelUrl}
+                        src={game.reel}
                         title="YouTube video player" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                         allowfullscreen>
                     </iframe>
-                </div>
+                </div> : ""}
 
                 <p className="gameSummary fullpage">{`"${game.summary}"`}</p>
 
@@ -118,7 +115,9 @@ export default function GamePage({index}) {
 
 }
 export const getStaticPaths = async () => {
-    const paths = games.map(e => ({params: { "gameslug" : e.slug }}));
+    const paths = games
+        .filter(e => e.message ? false : true)
+        .map(e => ({params: { "gameslug" : e.slug }}));
     return {
         paths,
         fallback: false

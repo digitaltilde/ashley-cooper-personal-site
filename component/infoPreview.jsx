@@ -3,21 +3,19 @@ import GameLinks from "./gameLinks";
 import Link from "next/link";
 
 export default function InfoPreview(props) {
-    const reelUrl = new URL(props.game.reel);
-
     return (<div className="infoSection">
 
         <div className="topInfoSection">
-            <div className="reelFrame">
+            {props.game.reel ? <div className="reelFrame">
                 <iframe 
                     width="100%"
-                    src={reelUrl}
+                    src={props.game.reel}
                     title="YouTube video player" 
                     frameBorder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowFullScreen>
                 </iframe>
-            </div>
+            </div> : ""}
             <div className="descriptionFrame">
                 <p className="gameSummary">{`"${props.game.summary}"`}</p>
                 {props.more ? <GameLinks game={props.game} /> : "" }
